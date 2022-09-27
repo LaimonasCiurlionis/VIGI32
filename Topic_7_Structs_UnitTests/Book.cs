@@ -8,11 +8,13 @@ namespace BooksLibrary
 {
     public struct Book
     {
+        //FIELDS
         public string title = "Bible"; // Default value
         public string author;
         public int id;
         public int pages;
 
+        //CONSTRUCTOR
         public Book(string title, string author, int id, int pages)
         {
             this.title = title;
@@ -21,6 +23,7 @@ namespace BooksLibrary
             this.pages = pages;
         }
 
+        //METHOD
         public void PrintTitle()
         {
             Console.WriteLine(title);
