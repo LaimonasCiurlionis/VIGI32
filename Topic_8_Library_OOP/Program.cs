@@ -25,3 +25,6 @@ examplePropertyRaw.Weight = 150;
 int result3 = examplePropertyRaw.Weight;
 
 #endregion
+
+Miskas miskas = new Miskas();
+miskas.PasodintiMedi();
