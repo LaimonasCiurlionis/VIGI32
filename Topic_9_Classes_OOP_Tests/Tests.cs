@@ -80,5 +80,20 @@ namespace Topic_9_Classes_OOP_Tests
             var actual = customer.Validate();
             Assert.IsFalse(actual);
         }
+
+        [Test]
+        public void SaveCustomer_WhenMultipleObjectsCreated_ReturnsListWithMultipleObject()
+        {
+            //Arrange
+            var customer = new Customer
+            {
+                FirstName = "John",
+                LastName = null
+            };
+
+            //Act
+            var actual = customer.Validate();
+            Assert.IsFalse(actual);
+        }
     }
 }
