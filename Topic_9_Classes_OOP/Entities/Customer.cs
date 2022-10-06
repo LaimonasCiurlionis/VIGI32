@@ -1,4 +1,4 @@
-﻿namespace Topic_9_Classes_OOP
+﻿namespace Topic_9_Classes_OOP.Entities
 {
     public class Customer
     {
@@ -21,7 +21,7 @@
 
         private List<Customer> Customers { get; set; }
 
-        public Customer(){}
+        public Customer() { }
 
         public Customer(string firstName)
         {
@@ -62,12 +62,12 @@
         {
             bool isValid = true;
 
-            if (string.IsNullOrWhiteSpace(FirstName)) 
+            if (string.IsNullOrWhiteSpace(FirstName))
             {
                 isValid = false;
             }
 
-            if (string.IsNullOrWhiteSpace(LastName)) 
+            if (string.IsNullOrWhiteSpace(LastName))
             {
                 isValid = false;
             }
@@ -75,18 +75,18 @@
             return isValid;
         }
 
-        public void Save(Customer entity) 
+        public void Save(Customer entity)
         {
             Customers.Add(entity);
         }
 
-        public List<Customer> Get() 
+        public List<Customer> Get()
         {
             return Customers;
         }
-        
+
         //OVERLOADING GET METHOD
-        public Customer Get(int id) 
+        public Customer Get(int id)
         {
             //TO IMPLEMENT
             return new Customer();

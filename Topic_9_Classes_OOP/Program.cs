@@ -1,4 +1,4 @@
-﻿using Topic_9_Classes_OOP;
+﻿using Topic_9_Classes_OOP.Entities;
 
 Customer customer = new Customer();
 var customer2 = new Customer("John", "Doe");
