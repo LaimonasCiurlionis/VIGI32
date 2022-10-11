@@ -1,4 +1,5 @@
 ﻿using Topic_9_Classes_OOP.Entities;
+using Topic_9_Classes_OOP.Inheritance;
 
 Customer customer = new Customer();
 var customer2 = new Customer("John", "Doe");
@@ -26,3 +27,17 @@ customer.SayMyFullName("Some Name");
 
 //STATIC
 Customer.SayMyFullNameStatic("Some Name");
+
+
+//INHERITANCE
+var animal = new Animal();
+animal.SayMyName();
+
+var dog = new Dog();
+dog.Color = "RED";
+
+var cat = new Cat();
+cat.Age = 5;
+
+var superDog = new SpecificDog();
+superDog.SomeSpecificProperty = 1;
