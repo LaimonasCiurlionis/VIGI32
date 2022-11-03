@@ -22,6 +22,10 @@ for (int i = 0; i < 100; i++)
     selfMadeList.AddItem(i);
 }
 
+//2.
+Validation.Validate<string>("TEST");
+Validation.Validate<string>(null);
+
 
 void ShowItem<T>(T item) 
 {
