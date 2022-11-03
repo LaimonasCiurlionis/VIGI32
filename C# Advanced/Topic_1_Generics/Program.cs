@@ -27,6 +27,13 @@ Validation.Validate<string>("TEST");
 Validation.Validate<string>(null);
 
 
+//Boxing and unboxing issue. DONT DO IT.
+var objectList = new List<object>();
+objectList.Add(5);
+objectList.Add("string");
+objectList.Add(new Human { Name = "John", Age = 30 });
+
+
 void ShowItem<T>(T item) 
 {
     Console.WriteLine($"Item: {item}");
