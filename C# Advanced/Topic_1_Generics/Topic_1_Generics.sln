@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Topic_1_Generics", "Topic_1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Topic_2_Exceptions", "..\Topic_2_Exceptions\Topic_2_Exceptions.csproj", "{E74D0383-56A1-408B-9210-61679E15659F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "..\ExtensionMethods\ExtensionMethods.csproj", "{E4241044-AD19-4661-9FD6-5DB88A8A2A15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "..\ExtensionMethods\ExtensionMethods.csproj", "{E4241044-AD19-4661-9FD6-5DB88A8A2A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topic_4_Lambda_LINQ", "..\Topic_4_Lambda_LINQ\Topic_4_Lambda_LINQ.csproj", "{E1C9B23F-3334-49AC-805F-93B824F925B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E4241044-AD19-4661-9FD6-5DB88A8A2A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4241044-AD19-4661-9FD6-5DB88A8A2A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4241044-AD19-4661-9FD6-5DB88A8A2A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1C9B23F-3334-49AC-805F-93B824F925B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C9B23F-3334-49AC-805F-93B824F925B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C9B23F-3334-49AC-805F-93B824F925B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C9B23F-3334-49AC-805F-93B824F925B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
