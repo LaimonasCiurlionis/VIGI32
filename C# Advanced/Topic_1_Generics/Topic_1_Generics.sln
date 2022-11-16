@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Topic_2_Exceptions", "..\To
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "..\ExtensionMethods\ExtensionMethods.csproj", "{E4241044-AD19-4661-9FD6-5DB88A8A2A15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topic_4_Lambda_LINQ", "..\Topic_4_Lambda_LINQ\Topic_4_Lambda_LINQ.csproj", "{E1C9B23F-3334-49AC-805F-93B824F925B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Topic_4_Lambda_LINQ", "..\Topic_4_Lambda_LINQ\Topic_4_Lambda_LINQ.csproj", "{E1C9B23F-3334-49AC-805F-93B824F925B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topic_5_Interfaces", "..\Topic_5_Interfaces\Topic_5_Interfaces.csproj", "{DAE16166-CF73-4CA7-A614-7C0E495202D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E1C9B23F-3334-49AC-805F-93B824F925B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1C9B23F-3334-49AC-805F-93B824F925B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1C9B23F-3334-49AC-805F-93B824F925B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAE16166-CF73-4CA7-A614-7C0E495202D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAE16166-CF73-4CA7-A614-7C0E495202D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAE16166-CF73-4CA7-A614-7C0E495202D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAE16166-CF73-4CA7-A614-7C0E495202D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
