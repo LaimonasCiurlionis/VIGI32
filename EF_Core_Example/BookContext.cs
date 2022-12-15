@@ -7,6 +7,8 @@ namespace EF_Core_Example
         public DbSet<Page> Pages { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<File> Files { get; set; }
+        public DbSet<Folder> Folders { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) 
         {

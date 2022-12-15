@@ -4,14 +4,16 @@ using EF_Core_Example;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EF_Core_Example.Migrations
 {
     [DbContext(typeof(BookContext))]
-    partial class BookContextModelSnapshot : ModelSnapshot
+    [Migration("20221215162614_FileAndFolderTablesAdded")]
+    partial class FileAndFolderTablesAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -103,10 +105,6 @@ namespace EF_Core_Example.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Path")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.ToTable("Folders");
@@ -157,7 +155,7 @@ namespace EF_Core_Example.Migrations
             modelBuilder.Entity("EF_Core_Example.File", b =>
                 {
                     b.HasOne("EF_Core_Example.Folder", "Folder")
-                        .WithMany("Files")
+                        .WithMany()
                         .HasForeignKey("FolderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -179,11 +177,6 @@ namespace EF_Core_Example.Migrations
             modelBuilder.Entity("EF_Core_Example.Book", b =>
                 {
                     b.Navigation("Pages");
-                });
-
-            modelBuilder.Entity("EF_Core_Example.Folder", b =>
-                {
-                    b.Navigation("Files");
                 });
 #pragma warning restore 612, 618
         }
