@@ -16,13 +16,9 @@ namespace EF_Core
 
         public string Content { get; set; }
 
-        [ForeignKey("Book")]
-        public Guid BookId { get; set; }
-        public Book Book { get; set; }
-
-        public Page(int number, string content)
+        public Page(Guid id, int number, string content)
         {
-            Id = Guid.NewGuid();
+            Id = id;
             Number = number;
             Content = content;
         }
