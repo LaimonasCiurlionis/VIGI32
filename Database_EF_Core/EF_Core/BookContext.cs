@@ -13,9 +13,9 @@ namespace EF_Core
 
         public DbSet<Book> Books { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=Ef_Core;Trusted_Connection=True;TrustServerCertificate=True");
+            options.UseSqlServer("Server=localhost;Database=Ef_Core;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true");
         }
     }
 }
