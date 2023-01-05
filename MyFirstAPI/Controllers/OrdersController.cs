@@ -6,37 +6,53 @@ namespace MyFirstAPI.Controllers
     [Route("[controller]")]
     public class OrdersController : ControllerBase
     {
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        private static List<Order> Orders = new List<Order>();
+        public OrdersController()
         {
-            return null;
+
         }
 
-        [HttpPost]
-        public IEnumerable<WeatherForecast> Add([FromBody] TestPost request)
+        [HttpGet]
+        public List<Order> Get()
         {
-            //Creating new resource
+            return Orders;
+        }
 
-
-            return null;
+        [HttpGet("id")]
+        public Order Get([FromQuery] int id)
+        {
+            return Orders.Single(x => x.Id == id);
         }
 
         [HttpPut]
-        public IEnumerable<WeatherForecast> Update([FromBody] TestPost request)
+        public Order Update([FromBody] OrderRequestModel request)
         {
-            //Creating new resource
-
-
-            return null;
+            var order = Orders.Single(x => x.Id == request.Id);
+            order.Price = request.Price;
+            order.Name = request.Name;
+            return order;
         }
 
-        [HttpDelete]
-        public IEnumerable<WeatherForecast> Delete([FromBody] TestPost request)
+        [HttpDelete("id")]
+        public Order Delete(int id)
         {
-            //Creating new resource
+            var order = Orders.Single(x => x.Id == id);
+            Orders.Remove(order);
+            return order;
+        }
 
-
-            return null;
+        [HttpPost]
+        public Order Create([FromBody] OrderRequestModel request)
+        {
+            var order = new Order
+            {
+                Id = Orders.Count + 1,
+                Name = request.Name,
+                Price = request.Price,
+                Created = DateTime.Now
+            };
+            Orders.Add(order);
+            return order;
         }
     }
 }

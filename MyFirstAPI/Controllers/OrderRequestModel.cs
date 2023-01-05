@@ -1,6 +1,6 @@
-﻿namespace WebApplication1.Controllers
+﻿namespace MyFirstAPI.Controllers
 {
-    public class OrdersRequestModel
+    public class OrderRequestModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Controllers
+﻿namespace MyFirstAPI.Controllers
 {
     public class Order
     {
@@ -7,5 +7,4 @@
         public decimal Price { get; set; }
         public DateTime Created { get; set; }
     }
-}
 }
